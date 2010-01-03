@@ -1,11 +1,13 @@
 #!/usr/bin/env zsh
 
+setopt always_to_end        # always go to end of word after completion
+setopt append_history       # append to history, dont truncate it
 setopt auto_cd              # do cd path if only 'path' is given as command
 setopt auto_continue        # send SIGCONT to jobs disowned
 setopt auto_list            # list choice on ambiguous command
 setopt auto_menu            # show menu for completion
 
-setopt vi                   # use vi bindkeys
+#setopt vi                   # use vi bindkeys
 
 LISTMAX=1000                # never ask
 HISTSIZE=10000              # size of history
