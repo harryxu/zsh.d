@@ -5,5 +5,6 @@
 #%{[31m%}> %{[m%}'
 
 setopt prompt_subst
-PROMPT='`git-prompt`%{[36m%}> '
-RPROMPT='%{[35m%}(%{[37m%}%~%{[35m%})%{[m%}'
+PROMPT='`git-prompt`%{$fg[cyan]%}> '
+RPROMPT='%{$fg[magenta]%}(%{$reset_color%}%~%{$fg[magenta]%})%{$reset_color%}'
+
