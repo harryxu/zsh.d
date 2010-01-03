@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+setopt auto_cd              # do cd path if only 'path' is given as command
+setopt auto_continue        # send SIGCONT to jobs disowned
+setopt auto_list            # list choice on ambiguous command
+setopt auto_menu            # show menu for completion
+
+setopt vi                   # use vi bindkeys
+
+LISTMAX=1000                # never ask
+HISTSIZE=10000              # size of history
+SAVEHIST=10000              # maximum of history events to be save
+HISTFILE=~/.zhistory
+WORDCHARS="*?_-.[]~/&;!#$%^(){}<>"
+                            # part of word in line editor
+

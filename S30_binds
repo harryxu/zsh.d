@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+bindkey -v "^[[3~" delete-char
+bindkey -v "^[[5~" backward-word
+bindkey -v "^[[6~" forward-word
+
+#Replace the "vi-" style bindings with the non-vi equivalents, which don't care about the insertion point.
+#http://www.zsh.org/mla/users/2009/msg00811.html
+bindkey -M viins '^h' backward-delete-char
+bindkey -M viins '^?' backward-delete-char
+bindkey -M viins '^w' backward-kill-word
+

@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+
+# default editor
+export EDITOR=vim
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+     precmd () {print -Pn "\e]0;%n@%m: %~\a"}
+        ;;
+esac
+
+autoload colors ; colors

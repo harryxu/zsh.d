@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+
+#RPROMPT='%/'
+#PROMPT='%{[36m%}%n%{[35m%}@%{[34m%}%M %{[32m%}%~ 
+#%{[31m%}> %{[m%}'
+
+setopt prompt_subst
+PROMPT='`git-prompt`%{[36m%}> '
+RPROMPT='%{[35m%}(%{[37m%}%~%{[35m%})%{[m%}'

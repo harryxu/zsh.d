@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+export PYTHON_EGG_CACHE="/tmp/python-egg"
+export PYTHONPATH="/home/harry/workspaces/python/"

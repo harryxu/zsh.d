@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+export JDK_HOME="/usr/lib/jvm/java-6-sun"
+
