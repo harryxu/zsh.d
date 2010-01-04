@@ -4,6 +4,9 @@
 # default editor
 export EDITOR=vim
 
+export PATH="${HOME}/bin:${PATH}"
+export PATH="${HOME}/usr/bin:${PATH}"
+
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
