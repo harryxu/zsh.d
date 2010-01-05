@@ -3,8 +3,10 @@
 #RPROMPT='%/'
 #PROMPT='%{[36m%}%n%{[35m%}@%{[34m%}%M %{[32m%}%~ 
 #%{[31m%}> %{[m%}'
+#PROMPT=$'\e[0;31m$ \e[0m'
 
 setopt prompt_subst
 PROMPT='`git-prompt`%{$fg[cyan]%}> '
 RPROMPT='%{$fg[magenta]%}(%{$reset_color%}%~%{$fg[magenta]%})%{$reset_color%}'
+
 
