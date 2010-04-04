@@ -8,6 +8,10 @@ export PATH="${HOME}/bin:${PATH}"
 export PATH="${HOME}/usr/bin:${PATH}"
 export PATH="${PATH}:/usr/sbin"
 
+# fix ssh sign useing the key
+# https://bugs.launchpad.net/ubuntu/+source/openssh/+bug/201786
+export SSH_AUTH_SOCK=0
+
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
