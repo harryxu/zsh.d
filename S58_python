@@ -1,4 +1,17 @@
 #!/usr/bin/env zsh
 
 export PYTHON_EGG_CACHE="/tmp/python-egg"
-export PYTHONPATH="/home/harry/workspaces/python/"
+
+# virtualenv
+if [[ -x `which mkvirtualenv` ]]; then
+    export WORKON_HOME=$HOME/.virtualenvs
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
+
+# pip
+if [[ -x `which pip` ]]; then
+    export PIP_VIRTUALENV_BASE=$WORKON_HOME
+    export PIP_RESPECT_VIRTUALENV=true
+fi
+
+

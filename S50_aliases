@@ -7,6 +7,7 @@ alias la="ls --color=always -a"
 alias ll="ls --color=always -lh"
 alias lla="ls --color=always -la"
 alias lal="ls --color=always -la"
+alias l='ls -CF'
 
 #path
 hash -d cosmos="~/workspaces/www/gksweb/cosmos/trunk/"
