@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# copy this dir to ~/.zsh.d
+# copy zshrc to ~/.zshrc
+# copy zshenv to ~/.zshenv
