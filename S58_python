@@ -3,7 +3,7 @@
 export PYTHON_EGG_CACHE="/tmp/python-egg"
 
 # virtualenv
-if [[ -x `which mkvirtualenv` ]]; then
+if [[ -x `which virtualenvwrapper.sh` ]]; then
     export WORKON_HOME=$HOME/.virtualenvs
     source /usr/local/bin/virtualenvwrapper.sh
 fi
