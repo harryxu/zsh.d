@@ -4,8 +4,8 @@
 # default editor
 export EDITOR=vim
 
+export PATH="${HOME}/opt/bin:${PATH}"
 export PATH="${HOME}/bin:${PATH}"
-export PATH="${HOME}/usr/bin:${PATH}"
 export PATH="${PATH}:/usr/sbin"
 
 # fix ssh sign useing the key
@@ -41,3 +41,5 @@ export IBUS_NO_SNOOPER_APPS="synapse,kupfer"
 
 # disable capslock
 xmodmap -e 'clear lock'
+
+umask 002
